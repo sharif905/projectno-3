@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Ishwarganj, Mymensingh</title>
+<style type="text/css">
+*{margin:0; padding:0; font-family: awesome;}
+a{text-decoration: none}
+ul{list-style-type: none;}
+.float-right{float: right;}
+.float-left{float: left;}
+.content{width:960px; padding:5px;}
+header .head{
+	background:#682f91;
+	display: block;
+	overflow: hidden;
+	padding:0 10px;
+	padding-bottom:8px;
+	padding-top:8px;
+	border-bottom: 5px solid #83a758;
+}
+header .head h1{
+	float: left;
+	color:#fff;
+	font-size: 1em;
+	padding:8px;
+}
+header .head .search select, input[type=text]{
+	margin-top:8px;
+	background: #fff;
+	border: none;
+	padding:4px;
+	color: #92948e;
+	border-radius: 3px;
+	margin-left:15px;
+}
+header .head .search .go{
+	padding:5px;
+	color: #fff;
+	background: #33a00b;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left:15px;
+}
+header .head .search .english{
+	float: right;
+	padding:5px 6px;
+	color:#fff;
+	background: #7f64b9;
+	border:1px solid #fff;
+	cursor: pointer;
+	margin:4px;
+	border-radius:3px;
+}
+header .logo{
+	width:100%;
+	height:210px;
+	display: block;
+	background-image:url('http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/top_banner/baafa1f4_1e93_11e7_8f57_286ed488c766/Balloy%20Beya.jpg');
+	background-repeat: no-repeat;
+	background-position: cover;
+}
+header .logo .govt-logo{
+	width:60px;
+	height:60px;
+	padding-top:50px;
+	padding-left:60px;
+}
+header .logo h1{
+	display: inline;
+	padding-left:30px;
+	padding-bottom:100px;
+	color:#fff;
+}
+nav{
+	min-height:35px;
+	border-bottom:1px solid #ddd;
+	background: #fafafa;
+}
+nav ul li{
+	float: left;
+	border-right: 1px solid #ddd;
+}
+nav ul li img{
+	width:13px;
+	height:15px;
+	padding:3px;
+}
+nav ul li a{
+	padding:9px 15px;
+	display: inline-block;
+}
+nav ul li .yellow{color:#f7b67d;;}
+nav ul li .red{color:red;}
+nav ul li .darkred{color:darkred;}
+nav ul li .green{color:green;}
+nav ul li .dodgerblue{color:#8fccbd;}
+nav ul li .beguni{color:#bca9ac;}
+nav ul li .black{color:#000;}
+
+.body .left-side{
+	width:720px;
+	float: left;
+	margin:10px;
+}
+.body .left-side .national-port{
+	width:720px;
+}
+.body .left-side .red-zone{
+	width:720px;
+}
+.body .left-side .notice-board{
+	width:700px;
+	height:200px;
+	background:#f6f6f6;
+	padding:10px;
+	border:1px solid #dcdcdc;
+}
+.body .left-side .notice-board h1{
+	padding:5px 60px;
+	font-size:1.8em;
+	font-weight: normal;
+}
+.body .left-side .notice-board ul li a{
+	margin-left: 120px;
+	font-size:0.9em;
+	color:#000;
+}
+.body .left-side .khobor{
+	background: #efefef;
+	overflow: hidden;
+	padding:10px;
+	margin:10px 0;
+	border:1px solid #dcdcdc;
+}
+.body .left-side .khobor h1{
+	font-size:1em;
+}
+.body .left-side .card{
+	width:348px;
+	height:150px;
+	margin:10px 5px;
+	float:left;
+	background-color: #f5f5f5;
+	border: 1px solid #dcdcdc;
+	box-shadow: 2px 3px 3px #dcdcdc;
+	overflow: hidden:
+}
+.body .left-side .card h3{
+	padding:10px;
+}
+.body .left-side .card img{
+	float:left;
+}
+.body .left-side .card ul{
+	margin-left:140px;
+	
+}
+.body .left-side .card ul li a{
+	color:#000;
+}
+
+.body .right-side{
+	width:200px;
+	margin:10px;
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+}
+.body .right-side img{
+	width:100%;
+	height:100%;
+}
+.body .right-side .sidelist ul{
+	border:1px solid #dcdcdc;
+	border-bottom:4px solid #d9d9d9;
+	min-height:40px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.body .right-side .sidelist ul li{
+	float:left;
+	border-right:1px solid #dcdcdc;	
+}
+.body .right-side .sidelist ul li a{
+	padding:10px 9.9px;
+	display: block;
+	color:#8c6299;
+}
+.body .right-side .sidelist ul li:last-child{
+	border-right: none;
+}
+.body .right-side .kendriyo-e-seba{
+	width:100%;
+	height:40px;
+	color:#fff;
+	border: none;
+	background: #609513;
+	cursor: pointer;
+	margin:20px 0;
+}
+.body .right-side .eseba h2{
+	text-align: center;
+	border: 2px solid #dcdcdc;
+	width:100%
+	height:40px;
+	background: #fefefe;
+	color: #7c49a2;
+	font-size:1em;
+	padding:8px;
+}
+.body .right-side .eseba ul{
+	padding:10px 20px;
+}
+.body .right-side .eseba ul li a{
+	padding:10px 0;
+	color:#000;
+}
+.body .right-side .headline{
+	width:100%;
+	color:#fff;
+	border: none;
+	background: #609513;
+	margin:10px 0;
+	font-size:1em;
+	padding:10px 15px;
+}
+.body .right-side .corona-situation h2{
+	width:100%;
+	color:#fff;
+	border: none;
+	background: #609513;
+	margin:10px 0;
+	font-size:0.79em;
+	padding:10px 0;
+}
+footer{
+	padding:40px 60px;
+	border-top: 5px solid #717171;
+	display: block;
+	overflow: hidden;
+	background: #ebebeb;
+}
+footer p{
+	padding:40px 60px;
+}
+footerb{
+	text-align: center;
+}
+footer .footerb a{
+	font-size:1em;
+	color:#e51818;
+}
+</style>
+</head>
+<body>
+	<header class="content">
+		<div class="head">
+			<h1>বাংলাদেশ জাতীয় তথ্য বাতায়ন</h1>
+			<div class="search">
+				<select name="division">
+					<option value="ময়মনসিংহ বিভাগ" selected>ময়মনসিংহ বিভাগ</option>
+				</select>
+				<select name="district">
+					<option value="ময়মনসিংহ" selected>ময়মনসিংহ</option>
+					<option value="জামালপুর">জামালপুর</option>
+					<option value="নেত্রকোনা">নেত্রকোনা</option>
+					<option value="টাঙ্গাইল">টাঙ্গাইল</option>
+				</select>
+				<select name="district">
+					<option value="ঈশ্বরগঞ্জ" selected>ঈশ্বরগঞ্জ</option>
+					<option value="নান্দাইল">নান্দাইল</option>
+					<option value="ত্রিশাল">ত্রিশাল</option>
+					<option value="ফুলপুর">ফুলপুর</option>
+				</select>
+				<input type="text">
+				<button class="go">Go</button>
+				<button class="english">English</button>
+			</div>
+		</div>
+		<div class="logo">
+			<img class="govt-logo" src="http://iswarganj.mymensingh.gov.bd/themes/responsive_npf/img/logo.png">
+			<h1>ঈশ্বরগঞ্জ উপজেলা</h1>
+		</div>
+	</header>
+	<nav class="content">
+		<ul>
+			<li><a href="#"><img src="icon/home.webp"></a></li>
+			<li><a class="yellow" href="#">উপজেলা সম্পর্কিত</a></li>
+			<li><a class="red" href="#">উপজেলা পরিষদ</a></li>
+			<li><a class="darkred" href="#">উপজেলা প্রশাসন</a></li>
+			<li><a class="green" href="#">পৌরসভা</a></li>
+			<li><a class="dodgerblue" href="#">সহকারী অফিস</a></li>
+			<li><a class="beguni" href="#">বিভিন্ন প্রতিষ্ঠান</a></li>
+			<li><a class="black" href="#">গ্যালারি</a></li>
+		</ul>
+	</nav>
+	<div class="body content">
+		<div class="left-side">
+			<img class="national-port" src="http://iswarganj.mymensingh.gov.bd/National-Portal-Card-PM.jpeg">
+			<img class="red-zone" src="http://iswarganj.mymensingh.gov.bd/red_zone_banner.jpg">
+			<div class="notice-board">
+				<h1>নোটিশ বোর্ড</h1>
+				<ul>
+					<li><a href="#">বিজ্ঞান ও প্রযুক্তি মন্ত্রনালয়ের ২০২০-২০২১ অর্থবছরে বিশেষ গবেষণা অনুদানের জন্য গ...</a></li>
+					<li><a href="#">মানবিক সহায়তা কর্মসূচীর তালিকাভুক্ত উপকারভোগীর বিভিন্ন সমস্যা যুক্ত তালিকা...</a></li>
+					<li><a href="#">মগটুলা ইউনিয়নের বিশেষ ওএমএস (১০ টাকা কেজি) প্রাপ্ত উপকারভোগী ভোক্তার খসড়া তালিকা...</a></li>
+					<li><a href="#">জাটিয়া ইউনিয়নের বিশেষ ওএমএস (১০ টাকা কেজি) প্রাপ্ত উপকারভোগী ভোক্তার খসড়া তালিকা...</a></li>
+					<li><a href="#">ঈশ্বরগঞ্জ সদর ইউনিয়নের বিশেষ ওএমএস (১০ টাকা কেজি) প্রাপ্ত উপকারভোগী ভোক্তার খসড়া...</a></li>
+				</ul>
+				<button class="float-right">সকল</button>
+			</div>
+			<div class="khobor">
+				<h1 class="float-left">খবরঃ</h1>
+				<button class="float-right">সকল</button>
+			</div>
+			<div class="card">
+				<h3>আমাদের সম্পর্কে</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/df9ba14d_44b0_4017_b8a8_81bfc8b88f42/6d0f0836be549bea51b00c36f172bcb0.png">
+				<ul>
+					<li><a href="#">&#9658; উপজেলা নির্বাহী অফিসার</a></li>
+					<li><a href="#">কর্মকর্তাগণ</a></li>
+					<li><a href="#">সেবাসমূহ</a></li>
+					<li><a href="#">যোগাযোগ</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>ভূমি সেবা</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/3ef2538d_1e99_11e7_8f57_286ed488c766/4fa49673fff3858f53c6e8dde93a390d.png">
+				<ul>
+					<li><a href="#">উত্তরাধিকার ক্যালকুলেটর</a></li>
+					<li><a href="#">ই-মিউটেশন</a></li>
+					<li><a href="#">আইন ও নীতিমালা</a></li>
+					<li><a href="#">সচরাচর জিজ্ঞাসা</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>সাস্থ সেবা</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/3ed69e5b_1e99_11e7_8f57_286ed488c766/67a838d9fd5ec8d96fbe8da6e32e5344.png">
+				<ul>
+					<li><a href="#">ডাক্তারের সাথে কথা বলুন</a></li>
+					<li><a href="#">ডাক্তারের তালিকা</a></li>
+					<li><a href="#">হাসপাতাল ও ক্লিনিক</a></li>
+					<li><a href="#">সাস্থ সেবা</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>শিক্ষা সেবা</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/3ed696b5_1e99_11e7_8f57_286ed488c766/decc6392a0db68b9177bb40dfbf10c1f.png">
+				<ul>
+					<li><a href="#">পরিক্ষার ফলাফল</a></li>
+					<li><a href="#">বিশ্ববিদ্যালয়সমূহ</a></li>
+					<li><a href="#">অনলাইনে MPO আবেদন</a></li>
+					<li><a href="#">শিক্ষাবোর্ডসমূহ</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>কৃষি, মৎস ও প্রাণী সেবা</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/3d5d6bbe_1e99_11e7_8f57_286ed488c766/65628c5a849c1a4a46cac16123c65fad.png">
+				<ul>
+					<li><a href="#">কৃষি সেবা</a></li>
+					<li><a href="#">মৎস্য ও প্রাণী সেবা</a></li>
+					<li><a href="#">মোবাইলে মৎস্য ও প্রাণী সেবা</a></li>
+					<li><a href="#">মোবাইলে প্রাণী সেবা</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>নিরাপত্তা ও শৃঙ্খলা</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/3d5d550d_1e99_11e7_8f57_286ed488c766/2da747a7d45e06c6c10d8686168582cf.png">
+				<ul>
+					<li><a href="#">অপরাধের তথ্য দিন</a></li>
+					<li><a href="#">পুলিশি সহায়তা</a></li>
+					<li><a href="#">মোবাইলে ফায়ার সার্ভিস</a></li>
+					<li><a href="#">অনলাইনে ফায়ার লাইসেন্স</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>পর্যটন সেবা</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/3d5d55b1_1e99_11e7_8f57_286ed488c766/d1864276baa5b325c1ec03ce4ec2061d.png">
+				<ul>
+					<li><a href="#">দর্শনীয় স্থানসমূহ</a></li>
+					<li><a href="#">মোবাইলে দর্শনীয় স্থান</a></li>
+					<li><a href="#">হোটেল ও আবাসন</a></li>
+					<li><a href="#">পর্যটন হোটেল রিজার্ভেশন</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>তথ্য অধিকার</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/3fc3ef95_2f0b_42ed_b2f2_2b403035e82d/4089e3cdf9cbcc92906e4f90b3635c21.png">
+				<ul>
+					<li><a href="#">তথ্য প্রদানকারী কর্মকর্তা</a></li>
+					<li><a href="#">তথ্য আইন ও বিধিমালা</a></li>
+					<li><a href="#">কর্মকর্তা ও আবেদনকারীর নির্দেশিকা</a></li>
+					<li><a href="#"></a>তথ্যের আবেদন ফরম</li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>অভিযোগ প্রতিরোধ ব্যবস্থা</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/c405c795_16b5_4499_a97f_c50580d14226/16dc7beabaa2ffefc7c1b88975e097c2.png">
+				<ul>
+					<li><a href="#">নির্দেশিকা সমূহ</a></li>
+					<li><a href="#">অনলাইনে অভিযোগ দাখিল</a></li>
+					<li><a href="#">অভিযোগ প্রতিকার ব্যবস্থা</a></li>
+					<li><a href="#">অনিক ও আপিল কর্মকর্তা</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>কর্মসম্পাদন ব্যবস্থাপনা</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/f86b986f_4a98_4ba6_ac07_679c13af8e43/00f1b1e89b0b7adb31a5b6a935b20e2e.png">
+				<ul>
+					<li><a href="#">প্রজ্ঞাপন/পরিপত্র/ নীতিমালা</a></li>
+					<li><a href="#">চুক্তিসমূহ</a></li>
+					<li><a href="#">চুক্তির কাঠামো</a></li>
+					<li><a href="#">এপিএমএস</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>শুদ্ধাচার</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/3f2fe448_1e99_11e7_8f57_286ed488c766/1480db92468cb3fa67aaf7cd8a131f05.png">
+				<ul>
+					<li><a href="#">জাতীয় শুদ্ধাচার কৌশল</a></li>
+					<li><a href="#">জেলা কমিটি</a></li>
+					<li><a href="#">কর্মপরিকল্পনা</a></li>
+					<li><a href="#">প্রজ্ঞাপন/পরিপত্র/নীতিমালা</a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<h3>জরুরি কল</h3>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/iswarganj.mymensingh.gov.bd/front_service_box/570a8185_2fa7_4d2f_97c7_65463ad3959f/aa3ba3950313431e2949a097e5479d33.png">
+				<ul>
+					<li><a href="#">৩৩৩ থেকে তথ্য সেবা</a></li>
+					<li><a href="#">কল সেন্টারসমূহ</a></li>
+					<li><a href="#">হেল্পডেস্ক</a></li>
+					<li><a href="#">ফোনে ডাক্তারের সেবা</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right-side">
+			<img class="seba-shohojikoron" src="http://bangladesh.gov.bd/sites/default/files/files/bangladesh.gov.bd/graphical_result_button/17dd9bb7_0856_4824_897e_6136ac6ca9b2/Tamplate_sps_bn.png">
+			<img class="e-seba-form" src="http://bangladesh.gov.bd/sites/default/files/files/bangladesh.gov.bd/graphical_result_button/6b8058ef_c17d_4a2d_9b26_b4779731503b/Tamplate_eservice_bn%20(1).png">
+			<div class="sidelist">
+				<ul>
+					<li><a href="#">চাকুরি</a></li>
+					<li><a href="#">টেন্ডার</a></li>
+					<li><a href="#">বিজ্ঞাপন</a></li>
+				</ul>
+			</div>
+			<img class="mopa" src="http://iswarganj.mymensingh.gov.bd/themes/responsive_npf/img/moopa_web_bn.jpg">
+			<button class="kendriyo-e-seba">কেন্দ্রীয় ই-সেবা</button>
+			<div class="eseba">
+				<h2 class="headline">অভ্যন্তরীণ ই-সেবা</h2>
+				<ul>
+					<li><a href="#">সার্ভিস ইনোভেশন ফান্ড</a></li>
+					<li><a href="#">তথ্য অধিকার আইন</a></li>
+					<li><a href="#">তথ্য প্রদানকারী কর্মকর্তা</a></li>
+					<li><a href="#">সেবা পাবার ধাপ</a></li>
+					<li><a href="#">ই-ডিরেক্টরী</a></li>
+					<li><a href="#">শিক্ষক বাতায়ন</a></li>
+				</ul>
+			</div>
+			<div class="hotline">
+				<h2 class="headline">জরুরি হটলাইন</h2>
+				<img src="http://iswarganj.mymensingh.gov.bd/National-Helpline.jpg">
+			</div>
+			<div class="corona-situation">
+				<h2>করোনা ভাইরাস প্রতিরোধে যোগাযোগ</h2>
+				<img src="http://iswarganj.mymensingh.gov.bd/corona_new.jpg">
+			</div>
+			<div class="corona-tracer">
+				<h2 class="headline">করোনা ট্রেসার বিডি</h2>
+				<img src="http://iswarganj.mymensingh.gov.bd/Corona-Teaser-BD-card-.jpg">
+			</div>
+			<div class="ekdeshe">
+				<h2 class="headline">একদেশ</h2>
+				<img src="http://iswarganj.mymensingh.gov.bd/ekdesh-zakat.jpg">
+			</div>
+			<div class="dengue">
+				<h2 class="headline">ডেঙ্গু প্রতিরোধে করণীয়</h2>
+				<img src="http://iswarganj.mymensingh.gov.bd/sites/default/files/files/dengue/dengu.jpg">
+			</div>
+		</div>
+	</div>
+	<footer class="content">
+		<p class="float-left">সাইট টি ডিজাইন করার সর্বশেষ সময় ০৯/০৮/২০২০ ইং ১৩:৫৭
+		<p class="footerb">সাইট টি ডুপ্লিকেট ডিজাইন করেছেন: <a href="https://www.facebook.com/sharif056/">মোঃ শরিফুল ইসলাম।</a></p>
+	</footer>
+</body>
+</html>
